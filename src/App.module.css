@@ -1,0 +1,14 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.rightContainer {
+  padding: 0 15px;
+  padding-left: 270px;
+}
+@media only screen and (max-width: 991px) {
+  .rightContainer {
+    padding-left: 15px;
+  }
+}
