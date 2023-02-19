@@ -1,0 +1,92 @@
+.fomo {
+  background: #ffffff;
+
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+.formContainer {
+  height: 65vh;
+  overflow-y: scroll;
+}
+.form {
+  padding: 35px 35px;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.inputContainer {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1f384c;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1f384c;
+  padding-bottom: 8px;
+}
+.inputs {
+  width: 100%;
+  position: relative;
+}
+.calender {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+.input {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1f384c;
+  border: 2px solid #e2e7e7;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  outline: none;
+}
+.dropDownItems {
+  padding: 15px;
+  position: absolute;
+  top: 50px;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+  border-radius: 8px;
+  z-index: 1;
+}
+.dropdownItem {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #1f384c;
+  padding: 5px 0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 520px) {
+  .formContainer {
+    border: none;
+  }
+  .form {
+    box-shadow: none;
+    padding: 35px 15px;
+  }
+}

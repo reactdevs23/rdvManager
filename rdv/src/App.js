@@ -18,7 +18,7 @@ function App() {
           {" "}
           <Header setSidebar={setSidebar} />
           <Routes>
-            <Route path="/foo" element={<Fomo />}></Route>
+            <Route path="/" element={<Fomo />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
