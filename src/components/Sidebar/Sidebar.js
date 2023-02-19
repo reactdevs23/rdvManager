@@ -12,7 +12,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
       icon: foo,
       activeIcon: activeFoo,
       navItem: "Foo",
-      to: "/foo",
+      to: "/",
     },
     {
       icon: bar,
@@ -24,7 +24,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
   return (
     <div className={`${styles.sidebar} ${sidebar && styles.showSidebar}`}>
       <MdClose className={styles.close} onClick={() => setSidebar(false)} />
-      <Link to="/">
+      <Link to="/" className={styles.logoContainer}>
         {" "}
         <img src={logo} alt="#" className={styles.logo} />
       </Link>

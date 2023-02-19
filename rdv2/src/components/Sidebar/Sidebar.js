@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { logo, foo, activeFoo, bar, activeBar } from "../../assets/images";
 import { MdClose } from "react-icons/md";
 import styles from "./styles.module.css";
@@ -24,7 +24,10 @@ const Sidebar = ({ sidebar, setSidebar }) => {
   return (
     <div className={`${styles.sidebar} ${sidebar && styles.showSidebar}`}>
       <MdClose className={styles.close} onClick={() => setSidebar(false)} />
-      <img src={logo} alt="#" className={styles.logo} />
+      <Link to="/">
+        {" "}
+        <img src={logo} alt="#" className={styles.logo} />
+      </Link>
       <div className={styles.buttonContainer}>
         {" "}
         <button className={styles.button}>+Add</button>

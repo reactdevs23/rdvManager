@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CiCircleChevDown } from "react-icons/ci";
+import { TfiArrowCircleDown } from "react-icons/tfi";
 import CheckBox from "../Checkbox/CheckBox";
 import styles from "./styles.module.css";
 const Form = () => {
@@ -22,7 +22,7 @@ const Form = () => {
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}
             type="text"
-            placeholder="Text - Input"
+            placeholder="Text-Input"
             className={styles.input}
             name="textInput"
           />
@@ -41,8 +41,9 @@ const Form = () => {
               placeholder="Select Box"
               className={styles.input}
               value={boxItem}
+              onChange={(e) => setBoxItem(e.target.value)}
             />
-            <CiCircleChevDown className={styles.calender} />
+            <TfiArrowCircleDown className={styles.calender} />
             {showDropDown && (
               <div className={styles.dropDownItems}>
                 {dropDownsItems.map((el, i) => (

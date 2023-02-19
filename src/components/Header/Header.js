@@ -7,6 +7,8 @@ import { MdOutlineSwitchRight, MdAdd } from "react-icons/md";
 import { FiMoreVertical, FiInfo, FiSettings } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import styles from "./Header.module.css";
+import { logo } from "../../assets/images";
+import { Link } from "react-router-dom";
 const Header = ({ setSidebar }) => {
   const [search, setSearch] = useState("");
   const [showSignOut, setShowSignOut] = useState(false);
@@ -29,15 +31,20 @@ const Header = ({ setSidebar }) => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.searchContainer}>
-        <input
-          type="text"
-          className={styles.search}
-          placeholder="Search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <BiSearch className={styles.searchIcon} />
+      <div className={styles.logoAndSearch}>
+        <Link to="/" className={styles.logoContainer}>
+          <img src={logo} alt="#" className={styles.logo} />
+        </Link>
+        <div className={styles.searchContainer}>
+          <input
+            type="text"
+            className={styles.search}
+            placeholder="Search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <BiSearch className={styles.searchIcon} />
+        </div>
       </div>
       <div className={styles.userContainer}>
         {" "}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CgClose } from "react-icons/cg";
-import { CiCircleChevDown } from "react-icons/ci";
+import { TfiArrowCircleDown } from "react-icons/tfi";
 import styles from "./styles.module.css";
 
 const AddData = ({ setModal }) => {
@@ -64,7 +64,7 @@ const AddData = ({ setModal }) => {
               className={styles.input}
               value={data}
             />
-            <CiCircleChevDown className={styles.calender} />
+            <TfiArrowCircleDown className={styles.calender} />
             {showDropDown && (
               <div className={styles.dropDownItems}>
                 {dropDownsItems.map((el, i) => (

@@ -3,14 +3,17 @@
 
   background: #ffffff;
   position: absolute;
-  min-height: 100vh;
-  top: 0;
+  min-height: calc(100vh - 83px);
+  top: 83px;
 
   display: flex;
   flex-direction: column;
 
   align-items: center;
   z-index: 1;
+}
+.logoContainer {
+  display: none;
 }
 .logo {
   width: 64px;
@@ -87,9 +90,13 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .logoContainer {
+    display: block;
+  }
   .sidebar {
     transform: translateX(-150%);
     transition: 0.3s;
+    top: 0;
   }
   .showSidebar {
     transform: translateX(0%);

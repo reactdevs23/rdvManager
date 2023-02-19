@@ -1,12 +1,21 @@
 .header {
-  padding: 15px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e2e7e7;
+  margin-right: 15px;
 }
-.logo {
-  display: none;
+.logoContainer {
+  width: 240px;
+  padding: 15px 0px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.logoAndSearch {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .searchContainer {
   position: relative;
@@ -163,6 +172,11 @@
   .header {
     flex-direction: column-reverse;
     gap: 20px;
+    margin: 0;
+    padding: 15px;
+  }
+  .logoContainer {
+    display: none;
   }
   .logo {
     width: 50px;

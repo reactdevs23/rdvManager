@@ -13,12 +13,11 @@ function App() {
     <div className={styles.container}>
       <BrowserRouter>
         <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-
+        <Header setSidebar={setSidebar} />
         <div className={styles.rightContainer}>
           {" "}
-          <Header setSidebar={setSidebar} />
           <Routes>
-            <Route path="/foo" element={<Fomo />}></Route>
+            <Route path="/" element={<Fomo />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
