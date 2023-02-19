@@ -11,12 +11,12 @@
 .searchContainer {
   position: relative;
   background: #ffffff;
-
   border-radius: 5px;
   max-width: 355px;
   height: 45px;
   display: flex;
   align-items: center;
+  padding-right: 35px;
 }
 .search {
   font-family: "Poppins";
