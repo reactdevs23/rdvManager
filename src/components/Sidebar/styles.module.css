@@ -2,7 +2,7 @@
   width: 240px;
 
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   min-height: 100vh;
   top: 0;
 

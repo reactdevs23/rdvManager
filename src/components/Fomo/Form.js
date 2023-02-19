@@ -12,7 +12,7 @@ const Form = () => {
 
   const dropDownsItems = ["item1", "item2", "item3", "item4"];
   return (
-    <div className={styles.fomoContainer}>
+    <div className={styles.formContainer}>
       <form action="" className={styles.form}>
         <div className={styles.inputContainer}>
           <label htmlFor="textInput" className={styles.label}>
